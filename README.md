@@ -86,7 +86,7 @@ torchrun --standalone --nproc_per_node=1 ./fid/calculate_metrics_func.py  --ref_
 
 Since latent diffusion does not provide official FID reference statistics, we preprocess the datasets and compute reference files manually. To facilitate evaluation, we provide the exact reference statistics that correspond to our pre-trained models: https://drive.google.com/drive/folders/1x1pEbZbD73giIOXUqLA3-h8W-GDORUym?usp=sharing.
 
-The generated references are stored in the refs/ directory.
+The generated references are stored in the ./refs/ directory.
 
 ```.bash
 # Image process and get reference of LSUN
