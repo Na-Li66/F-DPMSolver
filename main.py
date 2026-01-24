@@ -76,7 +76,7 @@ if __name__ == "__main__":
         torch.distributed.barrier()
 
     # Load network
-    if args.model_name == "ImageNet64" or args.model_name == "ImageNet512":
+    if args.model_name == "ImageNet64-S" or args.model_name == "ImageNet64-L" or args.model_name == "ImageNet512-XS" or args.model_name == "ImageNet512-XXL":
         model, encoder = load_model(dist, args.model_name)
     else:
         model = load_model(dist, args.model_name)
