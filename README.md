@@ -20,6 +20,7 @@ You can create and activate the environment using Miniconda:
 ```bash
 conda env create -f environment.yaml -n F-DPMSolver
 conda activate F-DPMSolver
+```
 
 ## Getting started
 
