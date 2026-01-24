@@ -117,7 +117,7 @@ if __name__ == "__main__":
             if args.model_name == "CIFAR10-cond" or args.model_name == "CIFAR10-uncond":
                 sampledimgs = sampledimgs * 0.5 + 0.5
                 images_np = (sampledimgs * 255).clip(0, 255).to(torch.uint8).permute(0, 2, 3, 1).cpu().numpy()
-            elif args.model_name == "ImageNet64" or args.model_name == "ImageNet512":
+            elif args.model_name == "ImageNet64-S" or args.model_name == "ImageNet64-L" or args.model_name == "ImageNet512-XS" or args.model_name == "ImageNet512-XXL":
                 sampledimgs = encoder.decode(sampledimgs)
                 images_np = sampledimgs.permute(0, 2, 3, 1).cpu().numpy()
             elif args.model_name == "FFHQ" or args.model_name == "LSUN":
