@@ -109,7 +109,7 @@ torchrun --standalone --nproc_per_node=1 ./fid/fid.py --subdirs {images_dir} --r
 torchrun --standalone --nproc_per_node=1 ./fid/fid.py --subdirs {images_dir} --ref_path refs/ffhq-256.npz
 ```
 
-## Results
+## Results of F-DDIM
 
 | NFE | CIFAR10-Cond | CIFAR10-uncond | ImageNet64-S | ImageNet64-L | ImageNet512-XS | ImageNet512-XXL | LSUN | FFHQ |
 | --- | -----------: | -------------: | -----------: | -----------: | -------------: | --------------: | ---: | ---: |
