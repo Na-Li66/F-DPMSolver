@@ -84,7 +84,7 @@ torchrun --standalone --nproc_per_node=1 ./fid/calculate_metrics_func.py  --ref_
 torchrun --standalone --nproc_per_node=1 ./fid/calculate_metrics_func.py  --ref_path=https://nvlabs-fi-cdn.nvidia.com/edm2/dataset-refs/img512.pkl --subdirs {images_dir}
 ```
 
-Since latent diffusion does not provide official FID reference statistics, we preprocess the datasets and compute reference files manually. To facilitate evaluation, we provide the exact reference statistics that correspond to our pre-trained models: https://drive.google.com/drive/folders/1x1pEbZbD73giIOXUqLA3-h8W-GDORUym?usp=sharing.
+Since latent diffusion does not provide official FID reference statistics, we preprocess the datasets and compute reference files manually. 
 
 The generated references are stored in the refs/ directory.
 
